@@ -6,7 +6,8 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-	api.versionsFrom('METEOR@1.0');
+	api.versionsFrom('METEOR@1.4');
+	api.use(['ecmascript'])
 	api.addFiles('query-builder.default.min.css', 'client');
 	api.addFiles('query-builder.standalone.js', 'client');
 	api.export('QueryBuilder', 'client');
